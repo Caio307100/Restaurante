@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica+Headline:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-index.css">
+</head>
+<body class="vh-100">
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid" id="cabecalho">
+                <p class="navbar-brand text-light" id="titulo-cabecalho"><span class="text-warning">S</span>anto <span class="text-warning">G</span>arfo</p>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav gap-5 align-items-center" >
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="index.html"><span class="text-warning">I</span>nicio</a>  
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="cardapio.html"><span class="text-warning">C</span>ardapio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="detalhes.html"><span class="text-warning">D</span>etalhes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container vh-75 d-flex justify-content-center">
+            <div class="d-flex row mt-5" id="destaque">
+                <div class="titulo-destaques">
+                    <p class="text-warning mt-3 ms-3">Santo Garfo</p>
+                </div>
+                <div class="descrisao">
+                    <p class="d-inline-flex text-warning ms-3">SABORES QUE ABRAÇAM: Gastronomia Afetiva <br> e Caseira em um Ambiente <br> conchegante. Ingredientes frescos, receitas tradicionais <br> e amor em cada prato.</p>
+                    <div class="button d-flex justify-content-end me-4 mb-4">
+                        <a href="cardapio.html">
+                            <button type="button" class="btn btn-warning" id="botao">Ver Cardápio</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container vh-100">
+            <div class="row mt-5" id="pratos">
+                <div class="titulo-pratos text-center">
+                    <p class="text-warning" >Nossos pratos em destaques</p>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="card border border-0" style="width: 18rem;" id="feijoada">
+                        <img src="https://www.receiteria.com.br/wp-content/uploads/feijoada-01.jpg" alt="imagem de uma feijoada" class="card-img-top">
+                        <div class="card-body bg-black rounded-bottom">
+                            <h5 class="card-title text-light" >Feijoada</h5>
+                            <p class="card-text text-dark-emphasis">Gastronomia Caseira e Afetiva. Nossa feijoada tradicional é feita com carnes nobres selecionadas, cozida lentamente e servida com o clássico caldinho encorpado da casa.</p>
+                            <p class="text-light">⭐⭐⭐⭐⭐ (4.9)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="card border border-0" style="width: 18rem;" id="costela">
+                        <img src="https://www.dicasedicas.com.br/_next/image?url=https%3A%2F%2Fd135llbe2j366l.cloudfront.net%2Fcompressed%2Fcostela-assada-em-papel-manteiga-google.webp&w=828&q=50" alt="imagem de uma feijoada" class="card-img-top" style="height: 177px; object-fit: cover;">
+                        <div class="card-body bg-black rounded-bottom">
+                            <h5 class="card-title text-light">Costela</h5>
+                            <p class="card-text text-dark-emphasis">12h de Assado Lento. Costela bovina premium preparada pacientemente no bafo até derreter na boca.</p>
+                            <p class="text-light">⭐⭐⭐⭐⭐ (5.0)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="card border border-0" style="width: 18rem;" id="file">
+                        <img src="https://receitadelicia.com.br/wordpress/wp-content/files/receitadelicia.com.br/2024/12/como-fazer-um-delicioso-bife-a-cavalo-768x512.webp" alt="imagem de uma feijoada" class="card-img-top">
+                        <div class="card-body bg-black rounded-bottom">
+                            <h5 class="card-title text-light">Filé</h5>
+                            <p class="card-text text-dark-emphasis">Grelhado no Ponto Perfeito. Suculento bife de filé mignom grelhado na chapa e coberto com ovos estalados de gema mole.</p>
+                            <p class="text-light">⭐⭐⭐⭐⭐ (4.7)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

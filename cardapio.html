@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardapio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica+Headline:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-cardapio.css">
+</head>
+<body class="vh-75">
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid" id="cabecalho">
+                <p class="navbar-brand text-light" id="titulo-cabecalho"><span class="text-warning">S</span>anto <span class="text-warning">G</span>arfo</p>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav gap-5 align-items-center" >
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="index.html"><span class="text-warning">I</span>nicio</a>  
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="cardapio.html"><span class="text-warning">C</span>ardapio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="detalhes.html"><span class="text-warning">D</span>etalhes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container vh-100">
+             <div class="row mt-3" id="pratos">
+                <div class="titulo-pratos text-center">
+                    <p class="text-warning" >Cardapio</p>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="card border border-0" style="width: 18rem;" id="feijoada">
+                        <img src="https://www.receiteria.com.br/wp-content/uploads/feijoada-01.jpg" alt="imagem de uma feijoada" class="card-img-top">
+                        <div class="card-body bg-black rounded-bottom">
+                            <h5 class="card-title text-light" >Feijoada</h5>
+                            <p class="card-text text-dark-emphasis">Gastronomia Caseira e Afetiva. Nossa feijoada tradicional é feita com carnes nobres selecionadas, cozida lentamente e servida com o clássico caldinho encorpado da casa.</p>
+                            <p class="card-text text-success text-center">R$ 68,90</p>
+                            <a href="detalhes.html#feijoada" class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-warning w-100" id="botao">Ver detalhes</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="card border border-0" style="width: 18rem;" id="costela">
+                        <img src="https://www.dicasedicas.com.br/_next/image?url=https%3A%2F%2Fd135llbe2j366l.cloudfront.net%2Fcompressed%2Fcostela-assada-em-papel-manteiga-google.webp&w=828&q=50" alt="imagem de uma feijoada" class="card-img-top" style="height: 177px; object-fit: cover;">
+                        <div class="card-body bg-black rounded-bottom">
+                            <h5 class="card-title text-light">Costela</h5>
+                            <p class="card-text text-dark-emphasis">12h de Assado Lento. Costela bovina premium preparada pacientemente no bafo até derreter na boca.</p>
+                            <p class="card-text text-success text-center">R$ 84,90</p>
+                            <a href="detalhes.html#costela" class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-warning w-100" id="botao">Ver detalhes</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="card border border-0" style="width: 18rem;" id="file">
+                        <img src="https://receitadelicia.com.br/wordpress/wp-content/files/receitadelicia.com.br/2024/12/como-fazer-um-delicioso-bife-a-cavalo-768x512.webp" alt="imagem de uma feijoada" class="card-img-top">
+                        <div class="card-body bg-black rounded-bottom">
+                            <h5 class="card-title text-light">Filé</h5>
+                            <p class="card-text text-dark-emphasis">Grelhado no Ponto Perfeito. Suculento bife de filé mignom grelhado na chapa e coberto com ovos estalados de gema mole.</p>
+                            <p class="card-text text-success text-center">R$ 72,90</p>
+                            <a href="detalhes.html#file" class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-warning w-100" id="botao">Ver detalhes</button>
+                            </a>                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 gap-5">
+                 <div class="col d-flex justify-content-center">
+                    <div class="card border border-0" style="width: 18rem;" id="risoto">
+                        <img src="https://www.estadao.com.br/resizer/v2/RNLOBGNTIZCX7BL2H3JDUW776A.jpeg?quality=80&auth=31458ca52201278a368e2db5f43a7e97810051087f92756ed145b62267eb065d&width=720&height=410&focal=830,370" alt="imagem de uma feijoada" class="card-img-top">
+                        <div class="card-body bg-black rounded-bottom">
+                            <h5 class="card-title text-light" >Risoto de Camarão e Açafrão</h5>
+                            <p class="card-text text-dark-emphasis">Cremoso risoto com caldo artesanal de frutos do mar, açafrão importado e camarões frescos grelhados na manteiga.</p>
+                            <p class="card-text text-success text-center">R$ 139,90</p>
+                            <a href="detalhes.html#risoto" class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-warning w-100" id="botao">Ver detalhes</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="card border border-0" style="width: 18rem;" id="rib">
+                        <img src="https://minervafoods.com/wp-content/uploads/2022/12/prime_rib.jpg" alt="imagem de uma feijoada" class="card-img-top" style="height: 177px; object-fit: cover;">
+                        <div class="card-body bg-black rounded-bottom">
+                            <h5 class="card-title text-light">Prime Rib Angus Grelhado</h5>
+                            <p class="card-text text-dark-emphasis">Corte premium grelhado no ponto perfeito, acompanhado de legumes grelhados na manteiga de ervas e flor de sal.</p>
+                            <p class="card-text text-success text-center">R$ 189,90</p>
+                            <a href="detalhes.html#rib" class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-warning w-100" id="botao">Ver detalhes</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="card border border-0" style="width: 18rem;" id="gnocchi">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb12Vl8YbUiWGYgM9_JGCzh3jQvc8PkTW6lq2EmsStq-vzvXxIld2q1Zii7noB83Qz_2X3xEZfTY5ghAHRgXWiopV8518kRM81d3YjMT8PkQNpZPx4Ec0tyBC5LG262L1jd3epc8mLwnRW/s1600/Nhoque+com+ragu+de+ossobuco.jpg" alt="imagem de uma feijoada" class="card-img-top">
+                        <div class="card-body bg-black rounded-bottom">
+                            <h5 class="card-title text-light">Gnocchi com Ragu de Ossobuco</h5>
+                            <p class="card-text text-dark-emphasis">Gnocchi artesanal de batata doce com molho ragu de ossobuco cozido lentamente por 12h e toque de hortelã fresca.</p>
+                            <p class="card-text text-success text-center">R$ 124,90</p>
+                            <a href="detalhes.html#gnocchi" class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-warning w-100" id="botao">Ver detalhes</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+</body>
+</html>

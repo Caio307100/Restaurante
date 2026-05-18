@@ -1,0 +1,84 @@
+body{
+    background-image: url("https://img.freepik.com/fotos-premium/mesa-de-madeira-em-desfocar-o-fundo-do-clube-ou-restaurante_219193-283.jpg?semt=ais_hybrid&w=740&q=80");
+    background-size: cover;
+    font-family: "Finlandica Headline", sans-serif;
+}
+#titulo-cabecalho{
+    padding: 0px;
+    margin: 0px;
+    text-shadow: 2px 2px 2px black;
+}
+#cabecalho{
+    background-color: rgb(84, 83, 83);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-shadow: 2px 2px 2px black;
+}
+nav{
+    padding: 0px;
+}
+main{
+    margin-top: 100px;
+}
+#titulo-feijoada, #titulo-costela, #titulo-file, #titulo-risoto, #titulo-rib, #titulo-gnoccchi{
+    font-size: 100px;
+    text-shadow: 2px 2px 2px black;
+    max-height: 110px;
+}
+.imagem{
+    object-fit: cover;
+    transition: 1s;
+}
+.imagem:hover{
+    scale: 1.1;
+}
+.descrisao-prato{
+    text-shadow: 2px 2px 2px black;
+    max-height: 110px;
+    margin-top: 100px;
+    color: rgb(194, 194, 194);
+}
+.textos p{
+    font-size: 1.4rem;
+}
+#descrisao-gnocchi{
+    margin-top: 100px;
+}
+@media(max-width: 1700px){
+    .imagem{
+        height: 300px;
+        width: 300px;
+    }
+    #titulo-feijoada, #titulo-costela, #titulo-file, #titulo-risoto, #titulo-rib, #titulo-gnoccchi{
+        font-size: 50px;
+    }
+    .textos p{
+        font-size: 1.3rem;
+    }
+}
+@media(max-width: 728px){
+    .feijoada, .costela, .file, .risoto, .rib, .gnocchi{
+        flex-direction: column;
+    }
+    .descrisao-prato{
+        margin-top: 10px;
+    }
+    #descrisao-gnocchi{
+        margin-top: 50px;
+    }
+}
+.comprar{
+    animation-duration: 0.5s;
+    animation-name: piscar;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes piscar{
+    0%{
+        color: green;
+    }
+    100%{
+        color: blue;
+    }
+}
+
