@@ -16,25 +16,13 @@ document.addEventListener("DOMContentLoaded", async () => {
             produtos.push(new Produto(produto.nome, produto.imagem, produto.descricao))
         }
         for (let produto of produtos){
-            let nome = produto.nome
-            let palavras = nome.split(" ")
-            let idProduto
-            if (palavras.lenght == 0){
-                idProduto = nome.toLowerCase()
-            }
-            else{
-                for (palavra of palavras){
-                    idProduto = palavra
-                    break
-                }
-            }
             document.querySelector("main").innerHTML += `
             <div class="container-fluid mt-5 vh-75">
-                <div class="d-flex gap-5" id="${idProduto}">
+                <div class="d-flex gap-5" id="prato">
                     <img src="${produto.imagem}" alt="imagem ${produto.nome}" width="30%" class="imagem ms-3">
 
                     <div class="textos d-flex flex-column gap-4">
-                        <h2 class="text-warning d-inline-flex" id="titulo-${idProduto}">
+                        <h2 class="text-warning d-inline-flex" id="titulo-prato">
                             ${produto.nome}
                         </h2>
 
@@ -56,25 +44,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     else{
         const respostaBanco = await fetch(`https://tech4produtos.fly.dev/produtos/${id}`)
         const json = await respostaBanco.json()
-        let nome = json.nome
-        let palavras = nome.split(" ")
-        let idProduto
-        if (palavras.lenght == 0){
-            idProduto = nome.toLowerCase()
-        }
-        else{
-            for (palavra of palavras){
-                idProduto = palavra
-                break
-            }
-        }
         document.querySelector("main").innerHTML += `
             <div class="container-fluid mt-5 vh-75">
-                <div class="d-flex gap-5" id="${idProduto}">
+                <div class="d-flex gap-5" id="prato">
                     <img src="${json.imagem}" alt="imagem ${json.nome}" width="30%" class="imagem ms-3">
 
                     <div class="textos d-flex flex-column gap-4">
-                        <h2 class="text-warning d-inline-flex" id="titulo-${idProduto}">
+                        <h2 class="text-warning d-inline-flex" id="titulo-prato">
                             ${json.nome}
                         </h2>
 

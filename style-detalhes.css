@@ -20,7 +20,7 @@ nav{
 main{
     margin-top: 100px;
 }
-#titulo-feijoada, #titulo-costela, #titulo-file, #titulo-risoto, #titulo-rib, #titulo-gnoccchi{
+#titulo-prato{
     font-size: 100px;
     text-shadow: 2px 2px 2px black;
     max-height: 110px;
@@ -41,15 +41,12 @@ main{
 .textos p{
     font-size: 1.4rem;
 }
-#descrisao-gnocchi{
-    margin-top: 100px;
-}
 @media(max-width: 1700px){
     .imagem{
         height: 300px;
         width: 300px;
     }
-    #titulo-feijoada, #titulo-costela, #titulo-file, #titulo-risoto, #titulo-rib, #titulo-gnoccchi{
+    #titulo-prato{
         font-size: 50px;
     }
     .textos p{
@@ -57,14 +54,11 @@ main{
     }
 }
 @media(max-width: 728px){
-    .feijoada, .costela, .file, .risoto, .rib, .gnocchi{
+    #prato{
         flex-direction: column;
     }
     .descrisao-prato{
         margin-top: 10px;
-    }
-    #descrisao-gnocchi{
-        margin-top: 50px;
     }
 }
 .comprar{
