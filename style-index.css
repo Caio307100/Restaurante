@@ -85,10 +85,10 @@ nav{
         font-size: 20px;
     }
 }
-#botao, #feijoada, #costela, #file{
+#botaoAnuncio, #feijoada, #costela, #file{
     transition: 1s;
 }
-#botao:hover{
+#botaoAnuncio:hover{
     scale: 1.3;
 }
 

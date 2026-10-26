@@ -31,10 +31,10 @@ nav{
         margin-top: 50px;
     }
 }
-#feijoada, #costela, #file, #risoto, #prime, #gnocchi{
+#prato{
     transition: 1s;
 }
-#feijoada:hover, #costela:hover, #file:hover, #risoto:hover, #prime:hover, #gnocchi:hover{
+#prato:hover{
     scale: 1.1;
     box-shadow: 1px 1px 5px 9px yellow;
 }
@@ -45,15 +45,7 @@ main{
     margin-top: 100px;
     margin-bottom: 300px;
 }
-#risoto{
-    max-height: 20px;
-    padding-bottom: 370px;
-}
-#prime{
-    max-height: 20px;
-    padding-bottom: 400px;
-}
-#gnocchi img{
+#prato img{
     height: 177px;
     object-fit: cover;
 }

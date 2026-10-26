@@ -27,9 +27,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             } 
             pratos2.innerHTML += `
             <div class="col d-flex justify-content-center">
-                <div class="card border border-0" style="width: 18rem;" id="${id}">
+                <div class="card border border-0" style="width: 18rem;" id="prato">
                     <img src="${produtoL.imagem}" class="card-img-top" alt="Imagem ${produtoL.nome}">
-                    <div class="card-body bg-black rounded-bottom">
+                    <div class="card-body bg-black rounded-bottom d-flex flex-column justify-content-between">
                         <h5 class="card-title text-light">${produtoL.nome}</h5>
                         <p class="card-text text-dark-emphasis">${produtoL.descrisao}</p>
 
@@ -47,9 +47,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             let id = nome.toLowerCase()
             pratos1.innerHTML += `
             <div class="col d-flex justify-content-center">
-                <div class="card border border-0" style="width: 18rem;" id="${id}">
+                <div class="card border border-0" style="width: 18rem;" id="prato">
                     <img src="${produtoL.imagem}" class="card-img-top" alt="Imagem ${produtoL.nome}">
-                    <div class="card-body bg-black rounded-bottom">
+                    <div class="card-body bg-black rounded-bottom d-flex flex-column justify-content-between">
                         <h5 class="card-title text-light">${produtoL.nome}</h5>
                         <p class="card-text text-dark-emphasis">${produtoL.descrisao}</p>
 
