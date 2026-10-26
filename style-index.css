@@ -20,7 +20,7 @@ nav{
 #destaque {
     background-image: url("https://blogs.correiobraziliense.com.br/lianasabo/wp-content/uploads/sites/25/2024/09/Pratos-Dalva-Cozinha_JP-Rodrigues-Dalva-Cozinha-550x366.jpg");
     background-size: cover;
-    width: 100%;
+    width: 80%;
     height: 50%;
 }
 .titulo-destaques p{
@@ -98,4 +98,14 @@ nav{
 }
 main{
     margin-top: 100px;
+}
+#anuncio{
+    margin: 0px;
+    width: 100%;
+    min-width: 100%;
+}
+#Cronometro{
+    color: white;
+    margin-left: 30px;
+    font-size: 2rem;
 }

@@ -1,0 +1,11 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "editor-browser",
+            "request": "launch",
+            "name": "Live Preview - Debug",
+            "url": "http://127.0.0.1:5500"
+        }
+    ]
+}

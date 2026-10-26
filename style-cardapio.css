@@ -31,10 +31,10 @@ nav{
         margin-top: 50px;
     }
 }
-#feijoada, #costela, #file, #risoto, #rib, #gnocchi{
+#feijoada, #costela, #file, #risoto, #prime, #gnocchi{
     transition: 1s;
 }
-#feijoada:hover, #costela:hover, #file:hover, #risoto:hover, #rib:hover, #gnocchi:hover{
+#feijoada:hover, #costela:hover, #file:hover, #risoto:hover, #prime:hover, #gnocchi:hover{
     scale: 1.1;
     box-shadow: 1px 1px 5px 9px yellow;
 }
@@ -47,11 +47,11 @@ main{
 }
 #risoto{
     max-height: 20px;
-    padding-bottom: 410px;
+    padding-bottom: 370px;
 }
-#rib{
+#prime{
     max-height: 20px;
-    padding-bottom: 425px;
+    padding-bottom: 400px;
 }
 #gnocchi img{
     height: 177px;
